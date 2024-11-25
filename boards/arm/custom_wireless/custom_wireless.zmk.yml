@@ -1,0 +1,16 @@
+file_format: "1"
+id: custom_wireless
+name: Custom Wireless
+url: https://lowprokb.ca/collections/keyboards/products/corne-ish-zen
+type: board
+arch: arm
+features:
+  - keys
+  - display
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - custom_wireless_left
+  - custom_wireless_right 
