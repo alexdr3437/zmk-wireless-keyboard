@@ -1,29 +1,5 @@
 manifest:
   remotes:
-    - name: nrfconnect 
-      url-base: https://github.com/nrfconnect
   projects:
-    - name: sdk-nrf
-      path: nrf
-      revision: v2.6-branch
-      remote: nrfconnect 
-      import:
-        # Please keep this list sorted alphabetically.
-        name-blocklist:
-          - Alexa-Gadgets-Embedded-Sample-Code
-          - canopennode
-          - cirrus
-          - civetweb
-          - connectedhomeip
-          - find-my
-          - hal_st
-          - homekit
-          - loramac-node
-          - lvgl
-          - matter
-          - mbed-cloud-client
-          - nrf-802154
-          - openthread
-          - sdk-lc3
   self:
     west-commands: scripts/west-commands.yml

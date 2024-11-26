@@ -26,7 +26,7 @@
 			&kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
 						&bootloader &kp LGUI &mo D &kp SPACE   &kp RET &mo 2 &kp RALT &bt BT_CLR
-							&kp Z &kp X									&bootloader &kp X
+							&kp Z &kp X									&bootloader &bootloader
             >;
         };
     };
