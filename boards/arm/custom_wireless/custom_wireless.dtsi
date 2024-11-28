@@ -70,6 +70,14 @@
             , <&key_physical_attrs 100 100  950  312       0     0     0>
         ;
     };
+
+    chosen {
+      zmk,battery = &vbatt;
+    };
+
+    vbatt: vbatt {
+        compatible = "zmk,battery-nrf-vddh";
+    };
 };
 
 &layouts_foostan_corne_position_map {
