@@ -42,5 +42,5 @@
 };
 
 &default_transform {
-    col-offset = <24>;
+    row-offset = <1>;
 };
