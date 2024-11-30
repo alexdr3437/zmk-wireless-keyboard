@@ -20,30 +20,40 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-			&kp ESC   &kp Q &kp W &kp E &kp R &kp T				&kp Y &kp U  &kp I     &kp O   &kp P    &kp TAB
-			&kp LCTRL &kp A &kp S &kp D &kp F &kp G				&kp H &kp J  &kp K     &kp L   &kp SEMI &kp DQT 
-			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B				&kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LALT
-			&kp LALT &kp SPACE &lt 2 LALT &kp LSHFT &none &kp LALT &mo 2 &kp BSPC &lt 1 ENTER &mo 2 &kp N &kp COMMA
+			&kp ESC    &kp Q     &kp W     &kp E      &kp R     &kp T                &kp Y     &kp U     &kp I     &kp O     &kp P     &kp TAB
+			&kp LCTRL  &kp A     &kp S     &kp D      &kp F     &kp G                &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT 
+			&kp LSHFT  &kp Z     &kp X     &kp C      &kp V     &kp B                &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp LALT
+			&kp LALT   &kp SPACE &lt 2 LALT &kp LSHFT &mo 3 &kp LALT             &mo 2     &kp BSPC  &lt 1 ENTER &mo 2    &kp N     &kp COMMA
             >;
         };
 
-        lower_layer { display-name = "NUMBER";
+        numbers_and_symbols { display-name = "numbers_and_symbols";
             bindings = <
-&kp GRAVE  &kp N1   &kp N2   &kp N3   &kp N4					&kp N5		 &kp N6   &kp N7   &kp N8   &kp N9   &kp N0   &kp DEL 
-&kp LT     &kp BSLH &kp PIPE &kp LBRC &kp LPAR &kp LBKT			&kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp MINUS &kp EQUAL
-&kp GT     &none    &none    &kp RBRC &kp RPAR &kp RBKT			&kp UNDER &kp UNDER &kp UNDER &kp EXCL &kp UNDER &kp UNDER 
-           &kp LGUI &trans   &kp LALT &kp LSHFT &none  &bootloader		&kp RET  &trans       &kp RALT     &none &kp UNDER    &kp UNDER
+&kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp DEL 
+&kp LT     &kp BSLH   &kp PIPE   &kp LBRC   &kp LPAR   &kp LBKT   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp MINUS  &kp EQUAL
+&kp GT     &none      &none      &kp RBRC   &kp RPAR   &kp RBKT   &kp UNDER  &kp UNDER  &kp UNDER  &kp EXCL   &kp UNDER  &kp UNDER 
+&kp LGUI   &trans     &kp LALT   &kp LSHFT  &none      &bootloader &kp RET   &trans     &kp RALT   &none      &kp UNDER  &kp UNDER
             >;
         };
 
         navigation {
-            display-name = "NAVIGATION";
+            display-name = "navigation";
             bindings = <
-&kp TAB    &kp LA(N1)       &kp LA(N2)       &kp LA(N3)       &kp LA(N4)       &kp LA(N5)         &kp LA(N6)   &kp LA(N7) &kp LA(N8)   &kp LA(N9)   &kp LA(N5)   &kp BSPC
-&bt BT_CLR &bt BT_SEL 0 &none &none &kp LA(F) &none   &kp LA(LEFT) &kp LA(DOWN) &kp LA(UP)   &kp LA(RIGHT) &trans   &bootloader
-&kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans   &trans    &trans   &trans
-           &kp LGUI     &trans       &kp SPACE    &none        &bootloader &kp RET  &trans   &kp RALT &none     &none
+&kp TAB    &kp LA(N1)       &kp LA(N2)       &kp LA(N3)       &kp LA(N4)       &kp LA(N5)       &kp LA(N6)   &kp LA(N7)   &kp LA(N8)   &kp LA(N9)    &kp LA(N5)   &kp BSPC
+&bt BT_CLR &none            &none            &none            &kp LA(F)        &none            &kp LA(LEFT) &kp LA(DOWN) &kp LA(UP)   &kp LA(RIGHT) &trans       &bootloader
+&kp LSHFT  &trans           &trans           &trans           &trans           &trans           &trans       &trans       &trans       &trans        &trans       &trans
+&kp LGUI   &trans           &kp SPACE        &none            &bootloader      &kp RET          &trans       &kp RALT     &none        &none
             >;
         };
+
+		ble_and_media {
+			display-name = "ble_and_media";
+			bindings = <
+&kp F1         &kp F2         &kp F3         &kp F4         &kp F5         &kp F6         &kp F7         &kp F8         &kp F9         &kp F10        &kp F11        &kp F12
+&bt BT_CLR     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &kp K_PREV     &kp K_VOL_UP   &kp K_VOL_DN   &kp K_NEXT     &kp K_MUTE     &kp K_PLAY_PAUSE
+&none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &none
+&none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &none
+			>;
+		};
     };
 };
